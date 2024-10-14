@@ -1,0 +1,64 @@
+.modalRools {
+   position: fixed;
+   top: 80px;
+   right: 0;
+   width: 100%;
+   height: calc(100% - 80px);
+   background-color: antiquewhite;
+   z-index: 50;
+   transition: all .5s linear;
+   transform: translateX(100%);
+   opacity: 0;
+}
+.roolsWrapper {
+   padding: 30px;
+}
+.closeRools {
+   text-align: right;
+   margin-bottom: 50px;
+   font-size: 20px;
+}
+.modalRools.open {
+   opacity: 1;
+   transform: translateX(0%);
+}
+.textRools {
+   font-size: 20px;
+   font-weight: 700;
+}
+.text {
+   width: 50%;
+}
+
+
+
+.modalService {
+   position: fixed;
+   top: 80px;
+   right: 0;
+   width: 100%;
+   height: calc(100% - 80px);
+   background-color: antiquewhite;
+   z-index: 50;
+   transition: all .5s linear;
+   transform: translateX(100%);
+   opacity: 0;
+}
+.serviceWrapper {
+   padding: 30px;
+}
+.closeService {
+   text-align: right;
+   margin-bottom: 50px;
+   
+}
+.modalService.open {
+   opacity: 1;
+   transform: translateX(0%);
+}
+
+@media (max-width: 575px) {
+   .textRools {
+      font-size: 15px;
+   }
+}
