@@ -7,6 +7,8 @@
    <title>Ак Кайын</title>
 
    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+   <script src="//ajax.aspnetcdn.com/ajax/jquery.ui/1.10.3/jquery-ui.min.js"></script>
+   <link rel="stylesheet" href="http://ajax.aspnetcdn.com/ajax/jquery.ui/1.10.3/themes/sunny/jquery-ui.css">
    <link rel="stylesheet" type="text/css" href="https://cdn.jsdelivr.net/npm/slick-carousel@1.8.1/slick/slick.css" />
 
    <link rel="stylesheet" type="text/css"
@@ -25,38 +27,52 @@
             &#x2717;
          </div>
          <div class="modalWindow">
-            <div class="reserve">Тут календарь бронь</div>
-            <div class="">
-               <div class="form_radio_btn">
-                  <input id="radio-1" type="radio" name="radio" value="1" checked>
-                  <label for="radio-1">Чан классический</label>
+
+            <form>
+               <label for="house">Выберите дом:</label>
+               <select id="house" name="house">
+                  <option value="1">Дом 1</option>
+                  <option value="2">Дом 2</option>
+               </select>
+               <div id="wrapper" class="ui-widget">
+                  <label for="datep" style="visibility: hidden; height: 0;">Дата: </label>
+                  <input id="datep" style="visibility: hidden; height: 0;" />
+                  <span id="inline"></span>
                </div>
 
-               <div class="form_radio_btn">
-                  <input id="radio-2" type="radio" name="radio" value="2">
-                  <label for="radio-2">Чан с еловыми ветками</label>
-               </div>
 
-               <div class="form_radio_btn">
-                  <input id="radio-3" type="radio" name="radio" value="3">
-                  <label for="radio-3">Чан с лепестками роз и со свечами</label>
-               </div>
-               <div class="form_radio_btn">
-                  <input id="radio-4" type="radio" name="radio" value="3">
-                  <label for="radio-4">Чан с еловыми ветками и цитрусом</label>
-               </div>
-               <div class="form_radio_btn">
-                  <input id="radio-5" type="radio" name="radio" value="3">
-                  <label for="radio-5">Чан еловые ветки+цитрус+лепестки роз</label>
-               </div>
+               <div class="">
+                  <div class="form_radio_btn">
+                     <input id="radio-1" type="radio" name="radio" value="1" checked>
+                     <label for="radio-1">Чан классический 0 руб</label>
+                  </div>
 
-               <div class="form_radio_btn">
-                  <input id="radio-6" type="radio" name="radio" value="4" disabled>
-                  <label for="radio-6">Чан с девочками</label>
-               </div>
+                  <div class="form_radio_btn">
+                     <input id="radio-2" type="radio" name="radio" value="2">
+                     <label for="radio-2">Чан с еловыми ветками 1500 руб</label>
+                  </div>
 
-            </div>
-            <button type="submit">Забронировать</button>
+                  <div class="form_radio_btn">
+                     <input id="radio-3" type="radio" name="radio" value="3">
+                     <label for="radio-3">Чан с лепестками роз и со свечами 2500 руб</label>
+                  </div>
+                  <div class="form_radio_btn">
+                     <input id="radio-4" type="radio" name="radio" value="3">
+                     <label for="radio-4">Чан с еловыми ветками и цитрусом 2500 руб</label>
+                  </div>
+                  <div class="form_radio_btn">
+                     <input id="radio-5" type="radio" name="radio" value="3">
+                     <label for="radio-5">Чан еловые ветки+цитрус+лепестки роз 3000 руб</label>
+                  </div>
+
+                  <div class="form_radio_btn">
+                     <input id="radio-6" type="radio" name="radio" value="4" disabled>
+                     <label for="radio-6">Чан с девочками</label>
+                  </div>
+
+               </div>
+               <button type="submit">Забронировать</button>
+            </form>
          </div>
       </div>
    </div>
@@ -569,6 +585,14 @@
                }
             }
          ]
+      });
+   </script>
+   <script>
+
+      $(function () {
+
+         $('#inline').datepicker($.datepicker.regional["ru"]);
+
       });
    </script>
 </body>
