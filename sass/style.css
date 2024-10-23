@@ -415,9 +415,9 @@ body {
   position: absolute;
   overflow-y: auto;
   width: 400px;
-  height: auto;
-  top: calc(50% - 250px);
-  left: calc(50% - 175px);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
   border-radius: 10px;
   background-color: rgb(255, 255, 255);
   cursor: default;
@@ -504,9 +504,19 @@ body {
     left: 0;
     padding: 0;
     z-index: 99999;
+    transform: none;
   }
   .form_radio_btn label {
     font-size: 15px;
+  }
+}
+@media (max-width: 1000px) and (orientation: landscape) {
+  .modalActive {
+    top: 0;
+    left: 50%;
+    padding: 0;
+    z-index: 99999;
+    transform: translateX(-50%);
   }
 }
 .modalRools {
