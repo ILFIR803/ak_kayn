@@ -24,11 +24,15 @@
    transform: translateX(0%);
 }
 .textRools {
-   font-size: 20px;
-   font-weight: 700;
+   font-size: 16px;
+   font-weight: 500;
 }
 .text {
    width: 50%;
+   span {
+      font-size: 20px;
+font-weight: 700;
+   }
 }
 
 

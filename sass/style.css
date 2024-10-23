@@ -407,6 +407,7 @@ body {
   cursor: pointer;
   /* указываем z-индекс для корректного наслаивания */
   z-index: 999;
+  overflow-y: auto;
 }
 
 /* позиционирование самого модального окна */
@@ -490,6 +491,11 @@ body {
   color: #666;
 }
 
+.closeModal img {
+  width: 30px;
+  cursor: pointer;
+}
+
 @media (max-width: 575px) {
   .modalActive {
     width: 100%;
@@ -533,12 +539,16 @@ body {
 }
 
 .textRools {
-  font-size: 20px;
-  font-weight: 700;
+  font-size: 16px;
+  font-weight: 500;
 }
 
 .text {
   width: 50%;
+}
+.text span {
+  font-size: 20px;
+  font-weight: 700;
 }
 
 .modalService {

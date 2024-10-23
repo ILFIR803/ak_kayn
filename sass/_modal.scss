@@ -13,6 +13,7 @@ body {
    cursor: pointer;
    /* указываем z-индекс для корректного наслаивания */
    z-index: 999;
+   overflow-y: auto;
 }
 
 /* позиционирование самого модального окна */
@@ -90,7 +91,10 @@ body {
 	background: #efefef;
 	color: #666;
 }
-
+.closeModal img{
+   width: 30px;
+   cursor: pointer;
+}
 @media (max-width: 575px) {
    .modalActive {
       width: 100%;
