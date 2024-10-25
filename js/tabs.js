@@ -21,3 +21,36 @@
    toggleSlide('.catalog-item__link');
    toggleSlide('.catalog-item__back');
 })(jQuery);
+
+
+const date = document.querySelector('.form_date')
+const money = document.querySelector('.form_money')
+const formNext = document.querySelector('.formNext')
+const formBack = document.querySelector('.formBack')
+
+formNext.addEventListener('click', function(event) {
+   event.preventDefault();
+   date.style.display = 'none'
+   money.style.display = 'flex'
+})
+formBack.addEventListener('click', function(event) {
+   event.preventDefault();
+   date.style.display = 'block'
+   money.style.display = 'none'
+})
+
+const house1=document.querySelector('#house1')
+const house2=document.querySelector('#house2')
+const option=document.querySelector('#house')
+
+house1.addEventListener('click', function() {
+   option.value =1
+})
+house2.addEventListener('click', function() {
+   option.value =2 
+})
+
+
+
+
+

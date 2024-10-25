@@ -28,7 +28,7 @@
          </div>
          <div class="modalWindow">
 
-            <form>
+            <form class="form_date">
                <label for="house">Выберите дом:</label>
                <select id="house" name="house">
                   <option value="1">Дом 1</option>
@@ -71,7 +71,19 @@
                   </div>
 
                </div>
-               <button type="submit">Забронировать</button>
+               <button class="formNext">Далее</button>
+            </form>
+            <form class="form_money">
+               <div class="">Итого: <span class="summ">1000</span> руб.</div>
+               <label for="name">Введите имя и фамилию</label>
+               <input type="text" id="name" placeholder="Иван Иванов">
+               <label for="phone">Введите номер телефона</label>
+               <input type="tel" name="phone" id="phone  " placeholder="8 927 999 99 99">
+               <div class="">
+                  <button class="formBack">назад</button>
+                  <button type="submit">Оплатить</button>
+
+               </div>
             </form>
          </div>
       </div>
@@ -203,10 +215,10 @@
       <div class="container">
          <h2 class="promo_header title title_tab">Наши дома</h2>
          <ul class="catalog__tabs">
-            <li class="catalog__tab catalog__tab_active">
+            <li class="catalog__tab catalog__tab_active" id="house1">
                <div>ДОМ 1</div>
             </li>
-            <li class="catalog__tab">
+            <li class="catalog__tab" id="house2">
                <div>ДОМ 2</div>
             </li>
 

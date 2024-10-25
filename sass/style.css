@@ -510,6 +510,16 @@ body {
     font-size: 15px;
   }
 }
+.form_date {
+  display: block;
+}
+
+.form_money {
+  display: none;
+  flex-direction: column;
+  gap: 10px;
+}
+
 @media (max-width: 1000px) and (orientation: landscape) {
   .modalActive {
     top: 0;
