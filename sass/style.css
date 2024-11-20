@@ -168,6 +168,15 @@ nav {
   transform: scale(1.2);
 }
 
+.link {
+  font-size: 14px;
+  text-align: center;
+}
+
+.policy {
+  padding-top: 100px;
+}
+
 .promo_header.title_tab {
   text-align: center;
   color: #050505;
@@ -561,6 +570,8 @@ body {
 .textRools {
   font-size: 16px;
   font-weight: 500;
+  flex-direction: row;
+  display: flex;
 }
 
 .text {
@@ -602,9 +613,13 @@ body {
 @media (max-width: 575px) {
   .textRools {
     font-size: 15px;
+    flex-direction: column;
+  }
+  .text {
+    width: 100%;
   }
 }
-@media (max-width: 1000px) and (orientation: landscape) {
+@media (min-width: 676px) and (orientation: landscape) {
   .textRools {
     flex-direction: row;
     display: inline-flex;

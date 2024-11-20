@@ -157,7 +157,13 @@ body {
     }
   }
 }
-
+.link {
+  font-size: 14px;
+  text-align: center;
+}
+.policy {
+  padding-top: 100px;
+}
 @import "./catalog";
 @import "./slider";
 @import "./modal";

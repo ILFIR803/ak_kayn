@@ -26,9 +26,12 @@
 .textRools {
    font-size: 16px;
    font-weight: 500;
+   flex-direction:row;
+   display: flex;
 }
 .text {
    width: 50%;
+
    span {
       font-size: 20px;
 font-weight: 700;
@@ -66,11 +69,16 @@ font-weight: 700;
 @media (max-width: 575px) {
    .textRools {
       font-size: 15px;
+      flex-direction: column;
+      
    }
+   .text {
+         width: 100%;
+      }
 }
 
 
-@media (max-width: 1000px) and (orientation: landscape) {  
+@media (min-width: 676px) and (orientation: landscape) {  
    .textRools {
       flex-direction:row;
       display: inline-flex;
